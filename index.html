@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function setname(){
+            const namefild = document.getElementById("username");
+            const name = namefild.value;
+            const title = document.getElementById("profile");
+            title.innerText = name + "profile";
+
+        }
+        function setimage(){
+            const profileimage = document.getElementById("url").value
+            const profile = document.getElementById("parent");
+            profile.style.backgroundImage="url("+profileimage+")"
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div id="parent">
+            <div class="child"></div>
+        </div>
+        <br>
+        <div id="profile"><h1>Nunu Profile</h1></div>
+        <div class="flex">
+            <p>set profile picture
+            <input type="text" id="username">
+            <button onclick="setname()">Click Me</button>
+        </div>
+        <div class="flex">
+            <p>image url</p>
+            <input type="text" id="url">
+            <button onclick="setimage()">Click Me</button>
+        </div>
+        <div class="gallery">
+            <div class="imagee1"></div>
+            <div class="imagee2"></div>
+            <div class="imagee3"></div>
+            <div class="imagee4"></div>
+            <div class="imagee5"></div>
+            <div class="imagee6"></div>
+            <div class="imagee7"></div>
+            <div class="imagee8"></div>
+            <div class="imagee9"></div>
+        </div>
+    </main>
+</body>
+</html>
